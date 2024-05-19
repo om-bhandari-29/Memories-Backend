@@ -20,6 +20,7 @@ function uploadImageNew(req, res, next) {
             const image = new imageModel_1.default({
                 name: req.body.originalName,
                 image: req.body.image,
+                place: req.body.place,
                 imageName: req.body.imageName,
                 imageDescription: req.body.imageDescription,
                 uploadedBy: req.currentUser.name,

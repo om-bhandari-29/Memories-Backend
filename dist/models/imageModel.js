@@ -35,6 +35,7 @@ const imageSchema = new mongoose_1.default.Schema({
             ref: "User"
         }
     ],
+    place: String,
     comments: [
         {
             by: String,
